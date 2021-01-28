@@ -3,33 +3,29 @@
 
 <head>
     <title>CMPSC185 PA1 Shiran Wang</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="nav navlayouts">
         <a href="index.html" class="navlist">Text</a>
         <a href="image.html" class="navlist">Images</a>
         <a href="video.html" class="navlist inred">Videos</a>
         <a href="table.html" class="navlist">Table</a>
+        <a href="email.html" class="navlist">Email</a>
     </div>
-
-    <section id="videocontainer">
-        <div class="imglayouts auto-column place-center column-gap">
-            <video class="size" controls>
-                <source src="videos/video1.mp4" type="video/mp4" />
-            </video>
-
-            <video class="size" controls>
-                <source src="videos/video2.mp4" type="video/mp4" />
-            </video>
-
-            <video class="size" controls>
-                <source src="videos/video3.mp4" type="video/mp4" />
-            </video>
-            
-        </div>
-    </section>
+    
+    <div class="grid_container">
+        <div class="grid-item"><video onclick="enlarge(this)" src="videos/video1.mp4" controls></video></div>
+        <div class="grid-item"><video onclick="enlarge(this)" src="videos/video2.mp4" controls></video></div>
+        <div class="grid-item"><video onclick="enlarge(this)" src="videos/video3.mp4" controls></video></div>
+        <div class="grid-item"><video onclick="enlarge(this)" src="videos/video4.mp4" controls></video></div>
+        <div class="grid-item"><video onclick="enlarge(this)" src="videos/video5.mp4" controls></video></div>
+        <div class="grid-item"><video onclick="enlarge(this)" src="videos/video6.mp4" controls></video></div>
+    </div>
+    
+    <button id="topbutton" onclick="backToTop()">Back to top</button>
+    <div class="overlay" id="overlay"><video class="source" id="source" controls></div>
+    <script src="script.js"></script>
 </body>
 
 </html>

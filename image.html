@@ -3,7 +3,7 @@
 
 <head>
     <title>CMPSC185 PA1 Shiran Wang</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -12,15 +12,39 @@
         <a href="image.html" class="navlist inred">Images</a>
         <a href="video.html" class="navlist">Videos</a>
         <a href="table.html" class="navlist">Table</a>
+        <a href="email.html" class="navlist">Email</a>
     </div>
 
-    <section id="imagecontainer">
-        <div class="imglayouts auto-column place-center column-gap">
-            <image width="400" height="300" src="images/1.jpg" type="image/jpg"  />
-            <image width="400" height="300" src="images/2.jpg" type="image/jpg"  />
-            <image width="400" height="300" src="images/3.jpg" type="image/jpg"  />
+    <div class="grid_container">
+            <div class="grid-item">
+                <image onclick="enlarge(this)" src="images/1.JPG" >
+            </div>
+            <div class="grid-item">
+                <image onclick="enlarge(this)" src="images/2.JPG" >
+            </div>
+            <div class="grid-item">
+                <image onclick="enlarge(this)" src="images/3.JPG" >
+            </div>
+            <div class="grid-item">
+                <image onclick="enlarge(this)" src="images/4.JPG" >
+            </div>
+            <div class="grid-item">
+                <image onclick="enlarge(this)" src="images/5.JPG" >
+            </div>
+            <div class="grid-item">
+                <image onclick="enlarge(this)" src="images/6.JPG" >
+            </div>
+            <div class="grid-item">
+                <image onclick="enlarge(this)" src="images/7.JPG" >
+            </div>
+            
         </div>
-    </section>
+    </div>
+    <button id="topbutton" onclick="backToTop()">Back to top</button>
+    <div class="overlay" id="overlay"><img class="source" id="source"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
+
+
