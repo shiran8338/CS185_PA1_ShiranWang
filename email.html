@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>CMPSC185 PA1 Shiran Wang</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="nav navlayouts">
+        <a href="index.html" class="navlist">Text</a>
+        <a href="image.html" class="navlist">Images</a>
+        <a href="video.html" class="navlist">Videos</a>
+        <a href="table.html" class="navlist">Table</a>
+        <a href="email.html" class="navlist inred">Email</a>
+    </div>
+
+    <section>
+        <form style="padding-left: 10px;">
+            <label for="email">Email Address:</label><br>
+            <input type="text" name="email" id="email"><br>
+            <p id="message"></p>
+            <button type='button' onclick="emailValid()">Submit</button>
+        </form>
+        
+    </section>
+    <br>
+    <button id="topbutton" onclick="backToTop()">Back to top</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
